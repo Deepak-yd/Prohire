@@ -24,5 +24,8 @@ services:
         value: https://ep-lingering-pond-b5llvv1n.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth
       - key: NEON_JWKS_URI
         value: https://ep-lingering-pond-b5llvv1n.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth/.well-known/jwks.json
+      - key: NEON_REST_URL
+        value: https://ep-lingering-pond-b5llvv1n.apirest.c-7.us-east-2.aws.neon.tech/neondb/rest/v1
+
 
 
