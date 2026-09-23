@@ -1,2 +1,25 @@
+# Dependencies
 node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+**/dist/
+target/
+**/target/
+
+# Logs & temp files
+*.log
+*.tmp
+.vade-report
+
+# Editor / System
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.user
+
+# Environment variables
 .env
+*.local
