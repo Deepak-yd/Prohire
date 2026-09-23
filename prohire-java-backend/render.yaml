@@ -7,11 +7,11 @@ services:
       - key: PORT
         value: 8080
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:postgresql://ep-cold-forest-b5w0keo0-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require
+        value: jdbc:postgresql://ep-lingering-pond-b5llvv1n-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require
       - key: SPRING_DATASOURCE_USERNAME
         value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
-        value: npg_1PDJKah8GgRF
+        value: npg_LbJhYKT8O4yR
       - key: SPRING_DATASOURCE_DRIVER_CLASS_NAME
         value: org.postgresql.Driver
       - key: SPRING_JPA_DATABASE_PLATFORM
