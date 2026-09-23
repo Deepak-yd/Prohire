@@ -1,4 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
 import {
   fetchAllJobs,
@@ -12,6 +13,7 @@ import PageHeader from "../components/PageHeader";
 
 export default function Jobs() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [allJobs, setAllJobs] = useState([]);
   const [categories, setCategories] = useState([]);
   const [showForm, setShowForm] = useState(false);
@@ -77,7 +79,7 @@ export default function Jobs() {
       await createHire({ jobId });
       alert("MISSION SYNCHRONIZED: Project assigned to your node. Check your dashboard.");
       // Optional: Update local state to reflect application
-      setJobs(prev => prev.map(j => j.id === jobId ? { ...j, status: 'APPLIED' } : j));
+      setAllJobs(prev => prev.map(j => j.id === jobId ? { ...j, status: 'APPLIED' } : j));
     } catch (err) {
       alert("Synchronization Failure: " + err.message);
     }

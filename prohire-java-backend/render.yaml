@@ -7,12 +7,17 @@ services:
       - key: PORT
         value: 8080
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://switchback.proxy.rlwy.net:32170/railway
+        value: jdbc:postgresql://ep-cold-forest-b5w0keo0-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require
       - key: SPRING_DATASOURCE_USERNAME
-        value: root
+        value: neondb_owner
       - key: SPRING_DATASOURCE_PASSWORD
-        value: kIzEgSUTmmOukUVGjLiyXfaBxcuVdipA
+        value: npg_1PDJKah8GgRF
+      - key: SPRING_DATASOURCE_DRIVER_CLASS_NAME
+        value: org.postgresql.Driver
+      - key: SPRING_JPA_DATABASE_PLATFORM
+        value: org.hibernate.dialect.PostgreSQLDialect
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
         value: update
       - key: PROHIRE_JWT_SECRET
         value: super-secret-key-that-is-at-least-32-characters-long
+
