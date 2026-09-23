@@ -20,4 +20,9 @@ services:
         value: update
       - key: PROHIRE_JWT_SECRET
         value: super-secret-key-that-is-at-least-32-characters-long
+      - key: NEON_AUTH_URL
+        value: https://ep-lingering-pond-b5llvv1n.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth
+      - key: NEON_JWKS_URI
+        value: https://ep-lingering-pond-b5llvv1n.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth/.well-known/jwks.json
+
 
